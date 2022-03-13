@@ -1,9 +1,13 @@
 #comment
-hell="Hello World"
-print (hell)
-
-print ()
-a = 2
-b = 2
-c = a + b
-print(c)
+a = input("Enter a=")
+b = input("Enter b=")
+o = input("Operator")
+if o=='+':
+    c = int(a) + int(b)
+elif o=='-':
+    c = int(a) - int(b)
+elif o=='*':
+    c = int(a) * int(b)
+elif o=='/':
+    c = int(a) / int(b)
+print (" a " + o + " b = ", c)
